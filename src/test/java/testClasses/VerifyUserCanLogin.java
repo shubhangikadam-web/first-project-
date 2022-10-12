@@ -40,7 +40,6 @@ static WebDriver driver;
 	@Test
 	public void test1() throws InterruptedException, IOException {
 		lp.enterEmailID();	
-		
 		lp.enterPassword();
 		lp.clickOnSubmitBtn();
 		
