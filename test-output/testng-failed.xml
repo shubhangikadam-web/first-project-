@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="testClasses.VerifyUserCanAddNewAddress">
+        <methods>
+          <include name="verifyUserCanOpenProfilePage"/>
+          <include name="afterClass"/>
+          <include name="addNewAddress" invocation-numbers="1"/>
+          <include name="afterMethod"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- testClasses.VerifyUserCanAddNewAddress -->
+      <class name="testClasses.VerifyUserCanGetLowestPriceProduct">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="VerifyUserCanGetLowestPriceProductFromEachPage"/>
+        </methods>
+      </class> <!-- testClasses.VerifyUserCanGetLowestPriceProduct -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
